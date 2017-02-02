@@ -4,7 +4,7 @@ Melody
 Description
 -----------
 
-Play SRG SSR audio content on Google Home using API.AI and the YouTube API.
+Play SRG SSR audio content on Google Home using API.AI and the SRG SSR APIs.
 
 Running the server locally
 --------------------------
