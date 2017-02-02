@@ -1,10 +1,10 @@
-Swiss Weather
-=============
+Melody
+======
 
 Description
 -----------
 
-Weather forecasting for Switzerland on Google Home using API.AI and the OpenWeatherMap API.
+Play SRG SSR audio content on Google Home using API.AI and the YouTube API.
 
 Running the server locally
 --------------------------
@@ -12,5 +12,5 @@ Running the server locally
 ```
 $ cd swiss-weather
 $ npm install
-$ node --harmony index.js
+$ node index.js
 ```
