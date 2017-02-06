@@ -1,0 +1,31 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "play Les Orties",
+        "intent": "play_audio",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "Les Orties",
+            "entity": "show"
+          }
+        ]
+      },
+      {
+        "text": "I want to listen to La Carte Blanche",
+        "intent": "play_audio",
+        "entities": [
+          {
+            "start": 20,
+            "end": 36,
+            "value": "La Carte Blanche",
+            "entity": "show"
+          }
+        ]
+      }
+    ],
+    "intent_examples": []
+  }
+}

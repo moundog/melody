@@ -1,0 +1,25 @@
+---
+version: '2'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+  rasa-nlu-trainer:
+    image: shore/rasa-nlu-trainer
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./training.json:/data/training.json
+      - rasa-data:/data
+  rasa-nlu:
+    image: shore/rasa-nlu:master
+    command: start --config /app/config.json
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config.json:/app/config.json
+      - ./training.json:/data/training.json
+      - rasa-data:/data
+volumes:
+  rasa-data: {}
